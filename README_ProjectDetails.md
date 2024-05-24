@@ -45,4 +45,8 @@ contract MyToken {
 
 }
 ```
+After writing the code it's time to compile it. So, press Ctrl + S to compile your code or click on Solidity comipler and then click on Compile project.sol . Now it's time to deploy click on deploy and run transction just below Solidity compiler and deploy . After deployment we can put values in mint and burn function to check if the code is working properly.
+
+### Thanks for Reading
+Have a Nice Day !!!
 
