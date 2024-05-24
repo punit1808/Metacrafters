@@ -1,42 +1,32 @@
-# Hello World
-
-This Solidity program is a simple "Hello World" program that demonstrates the basic syntax and functionality of the Solidity programming language. The purpose of this program is to serve as a starting point for those who are new to Solidity and want to get a feel for how it works.
+# Beginning
+So basically this Hello World! is the first program code as we start learning a new Programming Language. This file will introduce you with basic Solidity Language Syntax. This is the first step towards learning complex concepts.
 
 ## Description
-
-This program is a simple contract written in Solidity, a programming language used for developing smart contracts on the Ethereum blockchain. The contract has a single function that returns the string "Hello World!". This program serves as a simple and straightforward introduction to Solidity programming, and can be used as a stepping stone for more complex projects in the future.
+In this simple program we are having a simple contract written in Solidity Programming Language. This program have a public string which have a string value which is "Hello World " . This is the first step towards learning complex concepts.
 
 ## Getting Started
 
 ### Executing program
+For the execution of our code we will be using remix IDE ,
+https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.25+commit.b61c2a91.js
 
-To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
+After opening the remix IDE create a new .sol file and start writing the first hello world code.
 
-Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., HelloWorld.sol). Copy and paste the following code into the file:
 
 ```javascript
-pragma solidity ^0.8.4;
+// SPDX-License-Identifier: MIT
 
-contract HelloWorld {
-    function sayHello() public pure returns (string memory) {
-        return "Hello World!";
-    }
+pragma solidity >=0.8.2 <0.9.0;
+
+contract helloworld{
+    string public myString="Hello World";
 }
 
 ```
+After writing the code it's time to compile it. So, press Ctrl + S to compile your code or click on Solidity comipler and then click on
+Compile helloworld.sol . Now it's time to deploy click on deploy and run transction just below Solidity compiler and deploy .
+After deployment we can check the value in myString variable which must be "Hello World".
 
-To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.4" (or another compatible version), and then click on the "Compile HelloWorld.sol" button.
+### Thanks for reading 
+Start your Coding journey in Solidity Programming Language !!!!
 
-Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "HelloWorld" contract from the dropdown menu, and then click on the "Deploy" button.
-
-Once the contract is deployed, you can interact with it by calling the sayHello function. Click on the "HelloWorld" contract in the left-hand sidebar, and then click on the "sayHello" function. Finally, click on the "transact" button to execute the function and retrieve the "Hello World!" message.
-
-## Authors
-
-Metacrafter Chris  
-[@metacraftersio](https://twitter.com/metacraftersio)
-
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details
